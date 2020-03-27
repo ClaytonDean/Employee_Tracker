@@ -12,17 +12,17 @@ CREATE TABLE department (
 CREATE TABLE role (
 	id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(55) NULL,
-	salary VARCHAR(55) NULL,
-    department_id VARCHAR(55) NULL,
+	salary DECIMAL(55) NULL,
+    department_id INT NULL,
 	PRIMARY KEY(id)
 );
 
-CREATE TABLE employee (
+CREATE TABLE employees (
 	id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(55) NULL,
+    first_name VARCHAR(55) NULL,
 	last_name VARCHAR(55) NULL,
-    role_id VARCHAR(55) NULL,
-    manager_id VARCHAR(55) NULL,
+    role_id INT NULL,
+    manager_id INT NULL,
 	PRIMARY KEY(id)
 );
 
